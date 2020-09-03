@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Home from "./Pages/Home";
+import { BrowserRouter as Router,  Switch, Route, Link } from "react-router-dom";
+import Search from "./Components/Search/Search";
+import SearchPage from "./Components/SearchPage/SearchPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+        <Router>
+            <Switch>
+                <Route path="/search">
+                    {/* Search Page */}
+                    {/*<SearchPage />*/}
+                    <SearchPage />
+                </Route>
+                <Route path="">
+                    {/*  Home   */}
+                    <Home />
+                </Route>
+            </Switch>
+        </Router>
     </div>
   );
 }
 
 export default App;
+
+
+// After
+// <Router>
+//      <Switch>
+//             <Route>
+//                    <Components />
+//              </Route>
+//      </Switch>
+// </Router>
+
+
+//Inside of the Components , we are able to use "Link"
