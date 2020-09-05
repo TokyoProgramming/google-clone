@@ -3,4 +3,4 @@ Google clone
 deploy: https://clone-6bd5b.firebaseapp.com/
 
 
-<a href="https://imgflip.com/gif/4dxev6">via Imgflip</a>
+![demo]("C:\Users\m19ss\Documents\GitHub\Google-clone\4dxev6.gif")
